@@ -18,15 +18,5 @@ jobs:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Install inclusivelint
-        run: |
-          export TERM=xterm
-          chmod +x install.sh
-          sudo ./install.sh
-
-      - name: Run a multi-line script
-        working-directory: ./tests
-        run: |
-          export TERM=xterm
-          ./run_tests.sh
+      - name: check-language
+        uses: benhayehudi/inclusive-language-github-action@master
