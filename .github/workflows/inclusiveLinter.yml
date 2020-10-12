@@ -22,3 +22,5 @@ jobs:
         run: git diff --name-status -r ${{ github.sha }}
       - name: check-language
         uses: BryanMThomas/inclusive-terminology-workflow@main
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
