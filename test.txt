@@ -1,2 +1,2 @@
 Test File
-The nodes master123 and slave456 need to be added to the blacklist
+The nodes main123 and agent456 need to be added to the blocklist
