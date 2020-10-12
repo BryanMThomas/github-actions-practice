@@ -18,9 +18,7 @@ jobs:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: run git command 
-        run: git diff --name-status -r ${{ github.sha }}
-      - name: check-language
+      - name: check terminology
         uses: BryanMThomas/inclusive-terminology-workflow@main
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
