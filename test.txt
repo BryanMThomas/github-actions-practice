@@ -1,1 +1,2 @@
 Test File
+The nodes master123 and slave456 need to be added to the blacklist
