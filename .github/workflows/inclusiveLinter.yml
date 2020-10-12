@@ -19,6 +19,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: run git command 
-        run: git diff-tree --no-commit-id --name-only -r ${{ github.sha }}
+        run: git diff --name-status -r ${{ github.sha }}
       - name: check-language
         uses: BryanMThomas/inclusive-terminology-workflow@main
