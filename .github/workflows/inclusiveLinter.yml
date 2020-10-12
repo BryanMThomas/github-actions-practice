@@ -1,4 +1,4 @@
-name: Inclusive Linter
+name: Inclusive Terminology Linter
 
 # Run this workflow every time a new commit pushed to your repository
 on:
@@ -18,5 +18,7 @@ jobs:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: run git command 
+        run: git diff-tree --no-commit-id --name-only -r ${{ github.sha }}
       - name: check-language
         uses: BryanMThomas/inclusive-terminology-workflow@main
