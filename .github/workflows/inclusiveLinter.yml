@@ -24,5 +24,5 @@ jobs:
         message_id: 'alex'
         no_binary: false
         profanity_sureness: 1
-        pr_only: false
+        pr_only: true
         glob_pattern: "**"
