@@ -25,4 +25,4 @@ jobs:
         no_binary: false
         profanity_sureness: 1
         pr_only: false
-        glob_pattern: "*"
+        glob_pattern: "**"
