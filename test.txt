@@ -1,9 +1,2 @@
 Test File
 master
-slave
-blacklist
-he her his
-
-master1234
-agentSlaveAgent
-blacklist_123
