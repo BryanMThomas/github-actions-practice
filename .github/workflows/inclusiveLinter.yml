@@ -10,15 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12.x
-    - name: Comment on new PR
-      uses: BryanMThomas/inclusive-terminology-workflow@version-2
-      with:
-        message_id: 'Inclusive Check'
-        pr_only: true
-      env:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
+        uses: actions/checkout@v2
+        # Runs Inclusive check and comments on PR
+      - name: Comment Inclusive Check on new PR
+        uses: BryanMThomas/inclusive-terminology-workflow@version-2
+        with:
+          message_id: 'Inclusive Check'
+          pr_only: true
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
