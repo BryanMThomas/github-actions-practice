@@ -8,3 +8,5 @@ The slave node needs to be updated BryMasterFour
 Verify slave_here is updated
 
 BlAcKLiSt
+
+blacklistABCDEFG
