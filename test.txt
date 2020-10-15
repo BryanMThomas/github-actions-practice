@@ -2,3 +2,9 @@ Test File
 master1234
 slave456
 blacklist_now
+
+
+The slave node needs to be updated BryMasterFour
+Verify slave_here is updated
+
+BlAcKLiSt
