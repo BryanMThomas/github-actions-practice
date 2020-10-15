@@ -21,3 +21,5 @@ jobs:
         message_id: 'Inclusive Check'
         pr_only: true
         glob_pattern: "*"
+      env:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
