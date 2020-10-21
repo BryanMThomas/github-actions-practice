@@ -18,6 +18,6 @@ jobs:
         uses: BryanMThomas/inclusive-terminology-workflow@version-2
         with:
           message_id: 'Inclusive Check'
-          pr_only: true
+          pr_only: false
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
