@@ -13,15 +13,19 @@ jobs:
         # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - name: Run simple action
+        uses: actions/javascript-action@v1
         with:
-          node-version: 12.x
+          milliseconds: 1000
+      #- name: Use Node.js
+       # uses: actions/setup-node@v1
+        #with:
+         # node-version: 12.x
         # Runs Inclusive check and comments on PR
-      - name: Comment Inclusive Check on new PR
-        uses: BryanMThomas/inclusive-terminology-workflow@version-2
-        with:
-          message_id: 'Inclusive Check'
-          pr_only: false
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      #- name: Comment Inclusive Check on new PR
+       # uses: BryanMThomas/inclusive-terminology-workflow@version-2
+        #with:
+         # message_id: 'Inclusive Check'
+          #pr_only: false
+        #env:
+         # GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
