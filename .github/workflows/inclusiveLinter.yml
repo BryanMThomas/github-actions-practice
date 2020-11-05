@@ -18,7 +18,7 @@ jobs:
         with:
           milliseconds: 2000
       - name: Comment Inclusive Check on new PR
-        uses: BryanMThomas/inclusive-terminology-workflow@main
+        uses: BryanMThomas/inclusive-terminology-workflow@version-1
         with:
          allFiles: false
          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
