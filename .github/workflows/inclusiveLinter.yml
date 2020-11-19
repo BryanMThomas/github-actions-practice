@@ -7,7 +7,7 @@ on:
 
 jobs:
   terminology:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
         # Checks out a copy of your repository on the ubuntu-latest machine
